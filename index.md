@@ -21,7 +21,7 @@ Email: <chase.ruppert@live.com>
 [<img src="images/origin-logo.png" width="200" height="200" ></img>](https://www.origin.com)  
 
 ### SimCity (2013)
-[<img src="images/logo-simcity.png" width="303" height="155" ></img>](https://www.origin.com)  
+[<img src="images/logo-simcity.png" width="303" height="155" ></img>](http://www.simcity.com/)  
 Credited: Special Thanks  
 
 ### Scalable Advanced Graphics Engine (SAGE)
