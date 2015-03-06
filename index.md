@@ -32,6 +32,9 @@ Credited: Special Thanks
 [<img src="images/zephyr.png" width="298" height="123" ></img>](http://zephyr.vidzone.net/)  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fhmm2wmVhms" frameborder="0" allowfullscreen></iframe>
 
+### Morphin Marvin
+[<img src="images/morphin.png" width="298" height="123" ></img>](http://www.shockwave.com/gamelanding/morphingmarvin.jsp)  
+
 ## <a name="Code"></a>Code
 
 ### Algebraic Parser
