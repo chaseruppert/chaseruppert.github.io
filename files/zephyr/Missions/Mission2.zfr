@@ -1,0 +1,219 @@
+﻿<world sector="">
+  <attribute key="iCutterHostilePoolSize" type="int" value="5" />
+  <attribute key="iCutterFriendlyPoolSize" type="int" value="0" />
+  <attribute key="iCutterNeutralPoolSize" type="int" value="0" />
+  <attribute key="iPufferHostilePoolSize" type="int" value="3" />
+  <attribute key="iPufferFriendlyPoolSize" type="int" value="0" />
+  <attribute key="iPufferNeutralPoolSize" type="int" value="0" />
+  <attribute key="iGigaPufferHostilePoolSize" type="int" value="0" />
+  <attribute key="iGigaPufferFriendlyPoolSize" type="int" value="0" />
+  <attribute key="iGigaPufferNeutralPoolSize" type="int" value="0" />
+  <attribute key="iHavocHostilePoolSize" type="int" value="2" />
+  <attribute key="iHavocFriendlyPoolSize" type="int" value="5" />
+  <attribute key="iHavocNeutralPoolSize" type="int" value="0" />
+  <attribute key="iLongnosePoolSize" type="int" value="0" />
+  <attribute key="sBriefingText" value="" type="string" />
+  <attribute key="sDebriefingText" value="" type="string" />
+  <attribute key="sTravelMusic" value="Travel Music" type="string" />
+  <attribute key="sBattleMusic" value="Battle Music" type="string" />
+  <context name="WaypointIcons">
+    <attribute key="nPath1" value="{795.3199,1037.96,0}" type="vector" />
+    <attribute key="nPath2" value="{4381,53.92,0}" type="vector" />
+  </context>
+  <attribute key="nPath1" value="{-350.48,768.36,0}" type="NiPoint3" index="0" />
+  <attribute key="nPath1" value="{-161.76,1118.84,0}" type="NiPoint3" index="1" />
+  <attribute key="nPath1" value="{242.64,781.84,0}" type="NiPoint3" index="2" />
+  <attribute key="nPath1" value="{-13.48003,660.52,0}" type="NiPoint3" index="3" />
+  <attribute key="nPath2" value="{-13.47985,1415.4,0}" type="NiPoint3" index="0" />
+  <context name="Entity">
+    <context name="LoadMission" />
+    <context name="WinMission" />
+    <context name="LoseMission" />
+  </context>
+  <entity class="Entity" instance="LoadMission">
+    <attribute key="vTouchPosition" value="{94.36,-53.92,0}" type="vector" />
+    <attribute key="fRadiusSquared" value="0" type="float" />
+    <actionList class="ActionList" instance="init">
+      <action class="ActionPlayerSpawn" instance="CardinalAirship">
+        <attribute key="sFilename" value="Models/heroBoat/HRO_CAR.nif" type="string" />
+        <attribute key="vPosition" value="{0,3100,0}" type="vector" />
+        <attribute key="vHeading" value="{0,0,0}" type="vector" />
+        <attribute key="sWeaponType" value="ROUND_SHOT" type="string" />
+        <attribute key="sAllegiance" value="FRIENDLY" type="string" />
+        <attribute key="sAirshipType" value="CARDINAL_AIRSHIP" type="string" />
+        <attribute key="pInstance" value="this" type="pointer" />
+      </action>
+      <action class="ActionAirshipSpawn" instance="Havoc5">
+        <attribute key="sFilename" value="Models/ships/havoc/SwitchNode/KNG_HAV.kfm" type="string" />
+        <attribute key="vPosition" value="{566.16,-1334.52,100}" type="vector" />
+        <attribute key="vHeading" value="{0,0,0}" type="vector" />
+        <attribute key="sWeaponType" value="ROUND_SHOT" type="string" />
+        <attribute key="sAllegiance" value="FRIENDLY" type="string" />
+        <attribute key="sAirshipType" value="HAVOC_AIRSHIP" type="string" />
+        <attribute key="rPath" value="../../../../../../nPath1" type="reference" index="0" />
+        <attribute key="pInstance" value="this" type="pointer" />
+      </action>
+      <action class="ActionAirshipSpawn" instance="Havoc3">
+        <attribute key="sFilename" value="Models/ships/havoc/SwitchNode/KNG_HAV.kfm" type="string" />
+        <attribute key="vPosition" value="{700.96,-1294.08,50}" type="vector" />
+        <attribute key="vHeading" value="{0,0,0}" type="vector" />
+        <attribute key="sWeaponType" value="ROUND_SHOT" type="string" />
+        <attribute key="sAllegiance" value="FRIENDLY" type="string" />
+        <attribute key="sAirshipType" value="HAVOC_AIRSHIP" type="string" />
+        <attribute key="rPath" value="../../../../../../nPath1" type="reference" index="0" />
+        <attribute key="pInstance" value="this" type="pointer" />
+      </action>
+      <action class="ActionAirshipSpawn" instance="Havoc2">
+        <attribute key="sFilename" value="Models/ships/havoc/SwitchNode/KNG_HAV.kfm" type="string" />
+        <attribute key="vPosition" value="{889.68,-1334.52,0}" type="vector" />
+        <attribute key="vHeading" value="{0,0,0}" type="vector" />
+        <attribute key="sWeaponType" value="ROUND_SHOT" type="string" />
+        <attribute key="sAllegiance" value="FRIENDLY" type="string" />
+        <attribute key="sAirshipType" value="HAVOC_AIRSHIP" type="string" />
+        <attribute key="rPath" value="../../../../../../nPath1" type="reference" index="0" />
+        <attribute key="pInstance" value="this" type="pointer" />
+      </action>
+      <action class="ActionAirshipSpawn" instance="Havoc1">
+        <attribute key="sFilename" value="Models/ships/havoc/SwitchNode/KNG_HAV.kfm" type="string" />
+        <attribute key="vPosition" value="{-2264.64,525.72,0}" type="vector" />
+        <attribute key="vHeading" value="{0,0,0}" type="vector" />
+        <attribute key="sWeaponType" value="ROUND_SHOT" type="string" />
+        <attribute key="sAllegiance" value="HOSTILE" type="string" />
+        <attribute key="sAirshipType" value="HAVOC_AIRSHIP" type="string" />
+        <attribute key="rPath" value="../../../../../../nPath1" type="reference" index="0" />
+        <attribute key="pInstance" value="this" type="pointer" />
+      </action>
+      <action class="ActionAirshipSpawn" instance="SkyHawk1">
+        <attribute key="sFilename" value="Models/ships/cutter/switchNode/KNG_CUT.kfm" type="string" />
+        <attribute key="vPosition" value="{-390.92,2210.72,0}" type="vector" />
+        <attribute key="vHeading" value="{0,0,0}" type="vector" />
+        <attribute key="sWeaponType" value="ROUND_SHOT" type="string" />
+        <attribute key="sAllegiance" value="HOSTILE" type="string" />
+        <attribute key="sAirshipType" value="CUTTER_AIRSHIP" type="string" />
+        <attribute key="pInstance" value="this" type="pointer" />
+      </action>
+      <action class="ActionAirshipSpawn" instance="SkyHawk2">
+        <attribute key="sFilename" value="Models/ships/cutter/switchNode/KNG_CUT.kfm" type="string" />
+        <attribute key="vPosition" value="{-687.48,2547.72,0}" type="vector" />
+        <attribute key="vHeading" value="{0,0,0}" type="vector" />
+        <attribute key="sWeaponType" value="ROUND_SHOT" type="string" />
+        <attribute key="sAllegiance" value="HOSTILE" type="string" />
+        <attribute key="sAirshipType" value="CUTTER_AIRSHIP" type="string" />
+        <attribute key="rPath" value="../../../../../../nPath1" type="reference" index="0" />
+        <attribute key="pInstance" value="this" type="pointer" />
+      </action>
+      <action class="ActionAirshipSpawn" instance="SkyHawk3">
+        <attribute key="sFilename" value="Models/ships/cutter/switchNode/KNG_CUT.kfm" type="string" />
+        <attribute key="vPosition" value="{-269.6,2480.32,0}" type="vector" />
+        <attribute key="vHeading" value="{0,0,0}" type="vector" />
+        <attribute key="sWeaponType" value="ROUND_SHOT" type="string" />
+        <attribute key="sAllegiance" value="HOSTILE" type="string" />
+        <attribute key="sAirshipType" value="CUTTER_AIRSHIP" type="string" />
+        <attribute key="pInstance" value="this" type="pointer" />
+      </action>
+      <action class="ActionAirshipSpawn" instance="SkyHawk4">
+        <attribute key="sFilename" value="Models/ships/cutter/switchNode/KNG_CUT.kfm" type="string" />
+        <attribute key="vPosition" value="{-458.32,2669.04,0}" type="vector" />
+        <attribute key="vHeading" value="{0,0,0}" type="vector" />
+        <attribute key="sWeaponType" value="ROUND_SHOT" type="string" />
+        <attribute key="sAllegiance" value="HOSTILE" type="string" />
+        <attribute key="sAirshipType" value="CUTTER_AIRSHIP" type="string" />
+        <attribute key="pInstance" value="this" type="pointer" />
+      </action>
+      <action class="ActionAirshipSpawn" instance="SkyHawk5">
+        <attribute key="sFilename" value="Models/ships/cutter/switchNode/KNG_CUT.kfm" type="string" />
+        <attribute key="vPosition" value="{-485.28,2332.04,0}" type="vector" />
+        <attribute key="vHeading" value="{0,0,0}" type="vector" />
+        <attribute key="sWeaponType" value="ROUND_SHOT" type="string" />
+        <attribute key="sAllegiance" value="HOSTILE" type="string" />
+        <attribute key="sAirshipType" value="CUTTER_AIRSHIP" type="string" />
+        <attribute key="rPath" value="../../../../../../nPath1" type="reference" index="0" />
+        <attribute key="pInstance" value="this" type="pointer" />
+      </action>
+      <action class="ActionAirshipSpawn" instance="Puffer1">
+        <attribute key="sFilename" value="Models/ships/puffer/switchNode/GRS_PUF.kfm" type="string" />
+        <attribute key="vPosition" value="{404.4,1037.96,-950}" type="vector" />
+        <attribute key="vHeading" value="{0,0,0}" type="vector" />
+        <attribute key="sWeaponType" value="ROUND_SHOT" type="string" />
+        <attribute key="sAllegiance" value="HOSTILE" type="string" />
+        <attribute key="sAirshipType" value="PUFFER_AIRSHIP" type="string" />
+        <attribute key="rPath" value="../../../../../../nPath2" type="reference" index="0" />
+        <attribute key="pInstance" value="this" type="pointer" />
+      </action>
+      <action class="ActionAirshipSpawn" instance="Puffer3">
+        <attribute key="sFilename" value="Models/ships/puffer/switchNode/GRS_PUF.kfm" type="string" />
+        <attribute key="vPosition" value="{417.88,700.96,-950}" type="vector" />
+        <attribute key="vHeading" value="{0,0,0}" type="vector" />
+        <attribute key="sWeaponType" value="ROUND_SHOT" type="string" />
+        <attribute key="sAllegiance" value="HOSTILE" type="string" />
+        <attribute key="sAirshipType" value="PUFFER_AIRSHIP" type="string" />
+        <attribute key="rPath" value="../../../../../../nPath2" type="reference" index="0" />
+        <attribute key="pInstance" value="this" type="pointer" />
+      </action>
+      <action class="ActionAirshipSpawn" instance="Puffer2">
+        <attribute key="sFilename" value="Models/ships/puffer/switchNode/GRS_PUF.kfm" type="string" />
+        <attribute key="vPosition" value="{26.96,606.6,-950}" type="vector" />
+        <attribute key="vHeading" value="{0,0,0}" type="vector" />
+        <attribute key="sWeaponType" value="ROUND_SHOT" type="string" />
+        <attribute key="sAllegiance" value="HOSTILE" type="string" />
+        <attribute key="sAirshipType" value="PUFFER_AIRSHIP" type="string" />
+        <attribute key="rPath" value="../../../../../../nPath2" type="reference" index="0" />
+        <attribute key="pInstance" value="this" type="pointer" />
+      </action>
+      <action class="ActionAirshipSpawn" instance="Havoc4">
+        <attribute key="sFilename" value="Models/ships/havoc/SwitchNode/KNG_HAV.kfm" type="string" />
+        <attribute key="vPosition" value="{-2264.64,862.72,0}" type="vector" />
+        <attribute key="vHeading" value="{0,0,0}" type="vector" />
+        <attribute key="sWeaponType" value="ROUND_SHOT" type="string" />
+        <attribute key="sAllegiance" value="HOSTILE" type="string" />
+        <attribute key="sAirshipType" value="HAVOC_AIRSHIP" type="string" />
+        <attribute key="rPath" value="../../../../../../nPath1" type="reference" index="0" />
+        <attribute key="pInstance" value="this" type="pointer" />
+      </action>
+      <action class="ActionPlaySound" instance="1">
+        <attribute key="iSoundIndex" value="1011" type="int" />
+        <attribute key="fDelay" value="0" type="float" />
+        <attribute key="fVolume" value="1" type="float" />
+      </action>
+    </actionList>
+    <reaction class="ReactionDestroy" instance="0">
+      <attribute key="rAirship" value="../../ActionList/init/ActionAirshipSpawn/Havoc1/pInstance" type="reference" index="0" />
+      <attribute key="rAirship" value="../../ActionList/init/ActionAirshipSpawn/Havoc4/pInstance" type="reference" index="1" />
+      <action class="ActionUnload" instance="0">
+        <attribute key="rEntity" value="../../../../../../Entity/LoadMission" type="reference" index="0" />
+      </action>
+      <action class="ActionLoad" instance="0">
+        <attribute key="rEntity" value="../../../../../../Entity/WinMission" type="reference" index="0" />
+      </action>
+    </reaction>
+  </entity>
+  <entity class="Entity" instance="WinMission">
+    <attribute key="vTouchPosition" value="{5580.72,3895.72,0}" type="vector" />
+    <attribute key="fRadiusSquared" value="0" type="float" />
+    <actionList class="ActionList" instance="init">
+      <action class="ActionWinMission" instance="0">
+        <attribute key="fDelay" value="7.0" type="float" />
+      </action>
+      <action class="ActionPlaySound" instance="2">
+        <attribute key="iSoundIndex" value="1013" type="int" />
+        <attribute key="fDelay" value="0" type="float" />
+        <attribute key="fVolume" value="1" type="float" />
+      </action>
+    </actionList>
+    <reaction class="ReactionWinMission" instance="0">
+      <action class="ActionDisplayWinScreen" instance="0" />
+    </reaction>
+  </entity>
+  <entity class="Entity" instance="LoseMission">
+    <attribute key="vTouchPosition" value="{6429.96,6443.44,0}" type="vector" />
+    <attribute key="fRadiusSquared" value="0" type="float" />
+    <actionList class="ActionList" instance="init">
+      <action class="ActionLoseMission" instance="0">
+        <attribute key="fDelay" value="2.0" type="float" />
+      </action>
+    </actionList>
+    <reaction class="ReactionLoseMission" instance="0">
+      <action class="ActionDisplayLoseScreen" instance="0" />
+    </reaction>
+  </entity>
+</world>
