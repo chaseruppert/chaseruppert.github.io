@@ -64,7 +64,7 @@ set showmode                    " Display the current mode
 set cursorline                  " Highlight current line
 set backspace=indent,eol,start
 set smartcase  " Case sensitive when uc present
-set nowrap
+"set nowrap
 set nojoinspaces
 set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
 
