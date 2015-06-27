@@ -7,10 +7,16 @@
 "curl -LSso /cygdrive/c/Users/username/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 " Airline:
-" git clone https://github.com/bling/vim-airline /cygdrive/c/Users/username/.vim/bundle/vim-airline
+" git clone https://github.com/bling/vim-airline /cygdrive/c/Users/chase/.vim/bundle/vim-airline
 "
 " CtrlP:
-" git clone https://github.com/kien/ctrlp.vim.git /cygdrive/c/Users/username/.vim/bundle/ctrlp.vim
+" git clone https://github.com/kien/ctrlp.vim.git /cygdrive/c/Users/chase/.vim/bundle/ctrlp.vim
+"
+" Solarized:
+" git clone https://github.com/altercation/vim-colors-solarized.git /cygdrive/c/Users/chase/.vim/bundle/vim-colors-solarized
+"
+" Matchit:
+" git clone https://github.com/edsono/vim-matchit.git /cygdrive/c/Users/chase/.vim/bundle/vim-matchit
 
 " Setup your environment first
 if has('win32') || has('win64')
@@ -64,13 +70,13 @@ set showmode                    " Display the current mode
 set cursorline                  " Highlight current line
 set backspace=indent,eol,start
 set smartcase  " Case sensitive when uc present
-set nowrap
+"set nowrap
 set nojoinspaces
 set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
 
 ":au BufReadPost *.build set syntax=html
 au BufReadPost *.html set syntax=html
-source $HOME/.vim/macros/matchit.vim 
+source $HOME/.vim/bundle/vim-matchit/plugin/matchit.vim 
 
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
