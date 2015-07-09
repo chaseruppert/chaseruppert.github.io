@@ -90,5 +90,5 @@ let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 "let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 let g:ctrlp_custom_ignore = {
-    \ 'file': '\v(\.cpp|\.h|\.hh|\.cxx|\.html|\.js|\.css|\.less|\.xml|\.build)@<!$'
+    \ 'file': '\v(\.c|\.cpp|\.h|\.hh|\.cxx|\.py|\.html|\.js|\.css|\.less|\.xml|\.build)@<!$'
     \ }
