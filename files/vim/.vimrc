@@ -12,6 +12,12 @@
 " CtrlP:
 " git clone https://github.com/kien/ctrlp.vim.git /cygdrive/c/Users/username/.vim/bundle/ctrlp.vim
 
+" Solarized:
+" git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
+
+" matchit:
+" git clone https://github.com/edsono/vim-matchit.git ~/.vim/bundle/vim-matchit
+
 " Setup your environment first
 if has('win32') || has('win64')
     set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,path/to/home.vim/after
@@ -70,7 +76,7 @@ set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
 
 ":au BufReadPost *.build set syntax=html
 au BufReadPost *.html set syntax=html
-source $HOME/.vim/macros/matchit.vim 
+source $HOME/.vim/bundle/vim-matchit/plugin/matchit.vim  
 
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
