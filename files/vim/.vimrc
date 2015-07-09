@@ -92,3 +92,23 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = {
     \ 'file': '\v(\.c|\.cpp|\.h|\.hh|\.cxx|\.py|\.html|\.js|\.css|\.less|\.xml|\.build)@<!$'
     \ }
+
+" The Silver Searcher
+" On windows: install using Chocolatey:
+" https://github.com/ggreer/the_silver_searcher/wiki/Windows
+" https://chocolatey.org/
+" @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+" choco install ag
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag -l --nocolor -g "" %s'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
+
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
