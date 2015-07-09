@@ -81,6 +81,9 @@ source $HOME/.vim/bundle/vim-matchit/plugin/matchit.vim
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 
+" F4 to copy full filename to clipboard (Windows)
+nnoremap <silent> <F4> :let @* = expand("%:p")<CR>
+
 " Airline config
 let g:airline#extensions#tabline#enabled = 1
 
@@ -90,7 +93,7 @@ let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 "let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 let g:ctrlp_custom_ignore = {
-    \ 'file': '\v(\.c|\.cpp|\.h|\.hh|\.cxx|\.py|\.html|\.js|\.css|\.less|\.xml|\.build)@<!$'
+    \ 'file': '\v(\.c|\.cpp|\.h|\.hh|\.cxx|\.py|\.html|\.js|\.css|\.less|\.xml|\.xsd|\.build)@<!$'
     \ }
 
 " The Silver Searcher
