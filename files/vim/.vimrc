@@ -18,6 +18,9 @@
 " matchit:
 " git clone https://github.com/edsono/vim-matchit.git ~/.vim/bundle/vim-matchit
 
+" BufOnly (close all other buffers but current)
+" git clone https://github.com/vim-scripts/BufOnly.vim.git ~/.vim/bundle/vim-BufOnly
+
 " Setup your environment first
 if has('win32') || has('win64')
     set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,path/to/home.vim/after
@@ -76,7 +79,10 @@ set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
 
 ":au BufReadPost *.build set syntax=html
 au BufReadPost *.html set syntax=html
+
+" vim macros
 source $HOME/.vim/bundle/vim-matchit/plugin/matchit.vim  
+source $HOME/.vim/bundle/vim-BufOnly/plugin/BufOnly.vim  
 
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
