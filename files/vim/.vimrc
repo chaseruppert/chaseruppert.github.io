@@ -21,6 +21,9 @@
 " BufOnly (close all other buffers but current)
 " git clone https://github.com/vim-scripts/BufOnly.vim.git ~/.vim/bundle/vim-BufOnly
 
+" Bclose
+" https://github.com/rbgrouleff/bclose.vim
+
 " Setup your environment first
 if has('win32') || has('win64')
     set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,path/to/home.vim/after
@@ -87,17 +90,24 @@ source $HOME/.vim/bundle/vim-BufOnly/plugin/BufOnly.vim
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 
-" F4 to copy full filename to clipboard (Windows)
-nnoremap <silent> <F4> :let @* = expand("%:p")<CR>
+" toggle word wrap mode
+nnoremap <silent> <F2> :set wrap!<CR>
+
+" copy full filename to clipboard (Windows)
+nnoremap <silent> <F3> :let @* = expand("%:p")<CR>
 
 " Airline config
 let g:airline#extensions#tabline#enabled = 1
 
 " CtrlP settings
+"let g:ctrlp_match_window = 'bottom,order:ttb,results:100'
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
-let g:ctrlp_working_path_mode = 0
-"let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+" Maybe need to set these if you have problems with CtrlP finding files
+let g:ctrlp_max_files=0
+let g:ctrlp_working_path_mode = ""
+let g:ctrlp_max_depth=50
 let g:ctrlp_custom_ignore = {
     \ 'file': '\v(\.c|\.cpp|\.h|\.hh|\.cxx|\.py|\.html|\.js|\.css|\.less|\.xml|\.xsd|\.build)@<!$'
     \ }
@@ -110,14 +120,16 @@ let g:ctrlp_custom_ignore = {
 " choco install ag
 if executable('ag')
   " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
+  set grepprg=ag\ --nogroup\ --nocolor\ --ignore\ *.map\ --ignore\ *.log\ --ignore\ *.opensdf
 
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag -l --nocolor -g "" %s'
 
-  " ag is fast enough that CtrlP doesn't need to cache
-  let g:ctrlp_use_caching = 0
+  " ag is fast enough that CtrlP doesn't need to cache,
+  " but it still seems like it might be helpful??
+  let g:ctrlp_use_caching = 1
 endif
 
 " bind K to grep word under cursor
-nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+"nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+nnoremap K :lgrep! "\b<C-R><C-W>\b"<CR>:lw<CR>
