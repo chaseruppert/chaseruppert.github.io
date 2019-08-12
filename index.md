@@ -7,6 +7,6 @@
 
 ## <a name="About"></a>About
 
-<chase.ruppert@live.com>  
-[Resume](files/ruppertResume.private.pdf)  
-[LinkedIn](https://www.linkedin.com/in/chaseruppert)  
+* <chase.ruppert@live.com>  
+* [Resume](files/ruppertResume.private.pdf)  
+* [LinkedIn](https://www.linkedin.com/in/chaseruppert)  
