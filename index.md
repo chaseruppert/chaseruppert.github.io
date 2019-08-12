@@ -1,5 +1,3 @@
-<link href="markdown.css" rel="stylesheet"></link>
-
 # Chase Ruppert's Portfolio
 - - -
 /// [About](#About)  
