@@ -4,6 +4,10 @@ The following are several unpublished blog posts from a brief experiment with Un
 
 The blog posts demonstrate my introduction to UnrealScript and figuring out how one of the example projects works (namely, how to get the avatar to play a punch-like animation after a keyboard/mouse press).
 
+Here are the UnrealScript assets for the project:
+* (BrawlerGame.zip)
+* (Brawler UnrealScript Readme.docx)
+
 ## 2011-03-16
 
 Summary: created a new weapon class that emulates a short-range melee attack.
