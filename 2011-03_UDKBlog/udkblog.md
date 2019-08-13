@@ -6,7 +6,7 @@ The blog posts demonstrate my introduction to UnrealScript and figuring out how 
 
 Here are the UnrealScript assets for the project:
 * [BrawlerGame.zip](BrawlerGame.zip)
-* [Brawler UnrealScript Readme.docx](Brawler UnrealScript Readme.docx)
+* [Brawler\ UnrealScript\ Readme.docx](Brawler UnrealScript Readme.docx)
 
 ## 2011-03-16
 
