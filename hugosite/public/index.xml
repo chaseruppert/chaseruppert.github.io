@@ -6,7 +6,7 @@
     <description>Recent content on Chase Ruppert&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Nov 2016 13:00:25 +0530</lastBuildDate><atom:link href="https://chaseruppert.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://chaseruppert.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Name of the work 2</title>
       <link>https://chaseruppert.github.io/portfolio/work2/</link>
@@ -95,6 +95,15 @@
       
       <guid>https://chaseruppert.github.io/portfolio/work11/</guid>
       <description>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; TIL</title>
+      <link>https://chaseruppert.github.io/portfolio/2021-10-09_cpp_initfax/</link>
+      <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://chaseruppert.github.io/portfolio/2021-10-09_cpp_initfax/</guid>
+      <description>&lt;p&gt;What I learned in C++ today.&lt;/p&gt;</description>
     </item>
     
     <item>
