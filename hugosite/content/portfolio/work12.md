@@ -4,7 +4,7 @@ draft = false
 image = "img/portfolio/ISO_C++_Logo.svg"
 date = "2021-10-09"
 title = "C++ TIL"
-weight = 13
+weight = 12
 +++
 
 What I learned in C++ today.
