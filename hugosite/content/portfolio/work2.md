@@ -14,7 +14,7 @@ A list of movies (family friend and otherwise) that are somewhat recommended for
 
 Let's start with the family friendly titles, in no particular order...
 ### Room on the Broom
-![Room on the Broom](img/portfolio/roomonthebroom.jpg "Room on the Broom")
+![Room on the Broom](/img/portfolio/roomonthebroom.jpg "Room on the Broom")
 
 ### Curious George Halloween Boo Fest
 ### The Legend of Sleepy Hollow (1949)
