@@ -6,7 +6,7 @@
     <description>Recent content on Chase Ruppert&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://chaseruppert.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://chaseruppert.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WIP Halloween Movie List</title>
       <link>https://chaseruppert.github.io/portfolio/work2/</link>
@@ -18,10 +18,28 @@
     
     <item>
       <title>C&#43;&#43; TIL</title>
-      <link>https://chaseruppert.github.io/portfolio/work1/</link>
+      <link>https://chaseruppert.github.io/portfolio/cpptil2/</link>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://chaseruppert.github.io/portfolio/cpptil2/</guid>
+      <description>&lt;p&gt;Static member definitions and ODR&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; TIL</title>
+      <link>https://chaseruppert.github.io/portfolio/cpptil3/</link>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://chaseruppert.github.io/portfolio/cpptil3/</guid>
+      <description>&lt;p&gt;Evil variable names&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; TIL</title>
+      <link>https://chaseruppert.github.io/portfolio/cpptil1/</link>
       <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://chaseruppert.github.io/portfolio/work1/</guid>
+      <guid>https://chaseruppert.github.io/portfolio/cpptil1/</guid>
       <description>&lt;p&gt;What I learned in C++ today.&lt;/p&gt;</description>
     </item>
     

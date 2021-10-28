@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Chase Ruppert&#39;s Blog</title>
+<meta name="description" content="game dev and other thoughts">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://chaseruppert.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="https://chaseruppert.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://chaseruppert.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="https://chaseruppert.github.io/css/owl.theme.css">
+
+
+  <link href="https://chaseruppert.github.io/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+ 
+
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+
+<link href="https://chaseruppert.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://chaseruppert.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="https://chaseruppert.github.io/">Chase Ruppert&#39;s Blog</a></h1>
+    
+      <p class="sidebar-p">game engine dev who enjoys board games and tv</p>
+    
+      <p class="sidebar-p">san francisco</p>
+    
+    <ul class="sidebar-menu">
+      
+        <li><a href="https://chaseruppert.github.io/portfolio/">Home</a></li>
+      
+        <li><a href="https://chaseruppert.github.io/about/">About</a></li>
+      
+        <li><a href="https://chaseruppert.github.io/contact/">Get in touch</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  <a href="mailto:chase.ruppert@live.com" data-animate-hover="pulse" class="email">
+    <i class="fa fa-envelope"></i>
+  </a>
+  
+  
+  <a href="https://www.linkedin.com/in/chaseruppert" data-animate-hover="pulse" class="external">
+    <i class="fa fa-linkedin"></i>
+  </a>
+  
+  
+  
+  <a href="https://github.com/chaseruppert" data-animate-hover="pulse" class="external">
+    <i class="fa fa-github"></i>
+  </a>
+  
+  
+  
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2021 Chase Ruppert |
+        
+        Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+              
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="https://chaseruppert.github.io/">Chase Ruppert&#39;s Blog</a></h1>
+</div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>C&#43;&#43; TIL</h1>
+         <p>Static member definitions and ODR</p>
+<p>What does it mean if a variable is &ldquo;odr-used&rdquo;? What does ODR mean?</p>
+<p>Consider the following code:</p>
+<pre><code>class SomeClass
+{
+public:
+    static const char* wellKnownKeyValue = &quot;CommonString&quot;;
+};
+</code></pre>
+<p>&hellip; which won&rsquo;t compile. You can&rsquo;t define static members in-class, even if they&rsquo;re const, unless they&rsquo;re integral types:</p>
+<pre><code>error C2864: 'SomeClass::wellKnownKeyValue': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
+</code></pre>
+<p>To resolve this, you simply declare the variable and define it outside the scope of the class. Great.</p>
+<p>But what if you make the assignment a constexpr?</p>
+<pre><code>class SomeClass
+{
+public:
+    static constexpr const char* wellKnownKeyValue = &quot;CommonString&quot;;
+};
+</code></pre>
+<p>Voila! The compiler is happy. But why?</p>
+<p>Sources:
+<a href="https://en.cppreference.com/w/cpp/language/static">https://en.cppreference.com/w/cpp/language/static</a>
+<a href="https://en.cppreference.com/w/cpp/language/definition#ODR-use">https://en.cppreference.com/w/cpp/language/definition#ODR-use</a></p>
+         
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+      </div>
+  </div>
+  <script src="https://chaseruppert.github.io/js/jquery.min.js"></script>
+<script src="https://chaseruppert.github.io/js/bootstrap.min.js"></script>
+<script src="https://chaseruppert.github.io/js/jquery.cookie.js"> </script>
+<script src="https://chaseruppert.github.io/js/ekko-lightbox.js"></script>
+<script src="https://chaseruppert.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="https://chaseruppert.github.io/js/masonry.pkgd.min.js"></script>
+<script src="https://chaseruppert.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="https://chaseruppert.github.io/js/owl.carousel.min.js"></script>
+<script src="https://chaseruppert.github.io/js/front.js"></script>
+
+
+
+</body>
+</html>
