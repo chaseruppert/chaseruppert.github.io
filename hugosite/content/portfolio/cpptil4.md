@@ -11,8 +11,8 @@ Compiler Error C2908: Confusing error, simple problem.
 <!--more-->
 
 Terms:
-# Template specialization: when a templated thing is declared with a specific set of template params (not generalized) 
-# Explicit specialization: when an implementation is provided for a specific set of template parameters
+1. Template specialization: when a templated thing is declared with a specific set of template params (not generalized) 
+2. Explicit specialization: when an implementation is provided for a specific set of template parameters
 
 Typically, in a translation unit, using something before its been declared is a problem. Simple solution (usually): move the declarationg before the thing using it. Usually the compiler output is something like "blah is undefined/no matching function", but when templates are involved, the terminology of the output is fairly confusing:
 

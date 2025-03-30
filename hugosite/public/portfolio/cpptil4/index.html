@@ -103,8 +103,10 @@
          <h1>C&#43;&#43; TIL</h1>
          <p>Compiler Error C2908: Confusing error, simple problem.</p>
 <p>Terms:</p>
-<h1 id="template-specialization-when-a-templated-thing-is-declared-with-a-specific-set-of-template-params-not-generalized">Template specialization: when a templated thing is declared with a specific set of template params (not generalized)</h1>
-<h1 id="explicit-specialization-when-an-implementation-is-provided-for-a-specific-set-of-template-parameters">Explicit specialization: when an implementation is provided for a specific set of template parameters</h1>
+<ol>
+<li>Template specialization: when a templated thing is declared with a specific set of template params (not generalized)</li>
+<li>Explicit specialization: when an implementation is provided for a specific set of template parameters</li>
+</ol>
 <p>Typically, in a translation unit, using something before its been declared is a problem. Simple solution (usually): move the declarationg before the thing using it. Usually the compiler output is something like &ldquo;blah is undefined/no matching function&rdquo;, but when templates are involved, the terminology of the output is fairly confusing:</p>
 <pre tabindex="0"><code>error C2908: explicit specialization; &#39;ItemT *Datum::Get&lt;Datum*&gt;(void)&#39; has already been instantiated
 error C2908:         with
